@@ -1,0 +1,6 @@
+arr = list(map(int, input().split()))
+num = int(input())
+
+set_arr = set(arr)
+set_arr.remove(num)
+print(list(set_arr))

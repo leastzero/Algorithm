@@ -1,0 +1,14 @@
+arr = list(map(int, input().split()))
+target = int(input())
+
+dic = {}
+result = []
+
+for i in range(len(arr)):
+    dic[arr[i]] = i
+
+for i in arr:
+    if target - i in dic:
+        result.append(dic[i])
+
+print(result)
